@@ -1,6 +1,10 @@
 #include "shell.h"
 #include <signal.h>
 
+/**
+ * signalHandle - handles ctrl c signal
+ * @sig_num: NULL
+ */
 void signalHandle(__attribute__((unused))int sig_num)
 {
 	signal(SIGINT, signalHandle);
